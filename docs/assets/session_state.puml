@@ -1,0 +1,10 @@
+@startuml
+hide empty description
+
+state ACTIVE
+state ABANDONED
+state DECIDED
+ACTIVE --> ABANDONED 
+ACTIVE --> DECIDED
+
+@enduml

@@ -1,0 +1,38 @@
+@startuml
+autonumber
+actor "Session Owner" as o
+actor "Participant" as p
+box Makan Session Application
+boundary "Create Session API" as create
+boundary "Suggest Makan Place API" as suggest
+boundary "Enroll API" as enroll
+boundary "Get Makan Session API" as get
+boundary "Decide API" as decide
+end box
+
+o -> create: Create Makan Session \n:Session Name: A Team Lunch\n:OwnerDisplayName: Rick
+return MakanSession w/ rel links
+o -> p: Share Links to friends
+
+alt Owner Adds Own Suggestion
+    o -> suggest: Adam Road Hawker
+    return MakanSession w/ rel links
+end
+== All participants poll ==
+group poll
+    o -> get: Get Session Information
+    return MakanSession w/ rel links
+    p -> get: Get Session Information
+    return MakanSession w/ rel links
+end
+p -> enroll: Join Session \nDisplay Name:Morty
+return MakanSession w/ rel links
+
+p -> suggest: Mc Donalds
+return MakanSession w/ rel links
+
+== Some moments later...==
+o -> decide: decide session
+return MakanSession w/ selected makan place
+== Session Decided - Participants Stop Poll ==
+@enduml

@@ -1,0 +1,157 @@
+<mxfile host="Electron" modified="2024-02-28T12:53:40.793Z" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) draw.io/23.1.5 Chrome/120.0.6099.109 Electron/28.1.0 Safari/537.36" etag="F_wh458fLpL5ExNaXIpi" version="23.1.5" type="device">
+  <diagram name="Page-1" id="1DMKUsDWiaX2N73MTJY3">
+    <mxGraphModel dx="2412" dy="909" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="_eLs3ToDpT3CiZ2V5rhF-1" value="Makan Place" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;fontSize=17;fontStyle=1" parent="1" vertex="1">
+          <mxGeometry x="-420" y="10" width="130" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="_eLs3ToDpT3CiZ2V5rhF-2" value="Controller Layer" style="rounded=0;whiteSpace=wrap;html=1;verticalAlign=middle;" parent="1" vertex="1">
+          <mxGeometry x="-810" y="70" width="960" height="70" as="geometry" />
+        </mxCell>
+        <mxCell id="_eLs3ToDpT3CiZ2V5rhF-3" value="Marshals API contract format to internal format (possibly domain objects)" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" parent="1" vertex="1">
+          <mxGeometry x="165" y="95" width="260" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="_eLs3ToDpT3CiZ2V5rhF-5" value="Application Service Layer" style="rounded=0;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+          <mxGeometry x="-810" y="160" width="960" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="_eLs3ToDpT3CiZ2V5rhF-6" value="&lt;br&gt;&lt;br&gt;Domain Layer" style="rounded=0;whiteSpace=wrap;html=1;verticalAlign=top;" parent="1" vertex="1">
+          <mxGeometry x="-810" y="352" width="960" height="708" as="geometry" />
+        </mxCell>
+        <mxCell id="_eLs3ToDpT3CiZ2V5rhF-7" value="Implements the Interfaces Exposed by Domain" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" parent="1" vertex="1">
+          <mxGeometry x="165" y="265" width="260" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="_eLs3ToDpT3CiZ2V5rhF-10" value="Infra Layer" style="rounded=0;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+          <mxGeometry x="-190" y="250" width="340" height="70" as="geometry" />
+        </mxCell>
+        <mxCell id="_eLs3ToDpT3CiZ2V5rhF-11" value="Glue between concerns of &quot;accidental complexity&quot; / &quot;infra&quot; issues" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" parent="1" vertex="1">
+          <mxGeometry x="155" y="175" width="260" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="CAUcSHCx87Gz3ctJAqqK-1" value="" style="group" parent="1" vertex="1" connectable="0">
+          <mxGeometry x="-200" y="390" width="335" height="190" as="geometry" />
+        </mxCell>
+        <mxCell id="_eLs3ToDpT3CiZ2V5rhF-8" value="Repository Interface" style="shape=folder;fontStyle=1;spacingTop=10;tabWidth=40;tabHeight=14;tabPosition=left;html=1;whiteSpace=wrap;verticalAlign=top;" parent="CAUcSHCx87Gz3ctJAqqK-1" vertex="1">
+          <mxGeometry width="335" height="190" as="geometry" />
+        </mxCell>
+        <mxCell id="CknxK3lPKM3qClhYqKly-1" value="&lt;p style=&quot;margin:0px;margin-top:4px;text-align:center;&quot;&gt;&lt;b&gt;&amp;lt;&amp;lt;Interface&amp;gt;&amp;gt;&lt;/b&gt;&lt;/p&gt;&lt;p style=&quot;margin:0px;margin-top:4px;text-align:center;&quot;&gt;&lt;b&gt;MakanSessionRepository&lt;/b&gt;&lt;/p&gt;&lt;hr size=&quot;1&quot;&gt;&lt;p style=&quot;margin:0px;margin-left:4px;&quot;&gt;&lt;/p&gt;&lt;p style=&quot;margin:0px;margin-left:4px;&quot;&gt;findById(id): MakanSession&lt;/p&gt;&lt;p style=&quot;margin:0px;margin-left:4px;&quot;&gt;findByOwnerId(id): MakanSession&lt;/p&gt;&lt;p style=&quot;margin:0px;margin-left:4px;&quot;&gt;findByMakanKakiId(id): MakanSession&lt;/p&gt;&lt;p style=&quot;margin:0px;margin-left:4px;&quot;&gt;save(): void&lt;/p&gt;&lt;p style=&quot;margin:0px;margin-left:4px;&quot;&gt;&lt;br&gt;&lt;/p&gt;" style="verticalAlign=top;align=left;overflow=fill;fontSize=12;fontFamily=Helvetica;html=1;whiteSpace=wrap;" parent="CAUcSHCx87Gz3ctJAqqK-1" vertex="1">
+          <mxGeometry x="12.5" y="50" width="310" height="120" as="geometry" />
+        </mxCell>
+        <mxCell id="QNmaYOr-ZnPay1GvhER1-2" value="&amp;lt;fucai.me.makanplace.api&amp;gt;" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;fontStyle=1" vertex="1" parent="1">
+          <mxGeometry x="-425" y="70" width="180" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="QNmaYOr-ZnPay1GvhER1-3" value="&amp;lt;fucai.me.makanplace.app.service&amp;gt;" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;fontStyle=1" vertex="1" parent="1">
+          <mxGeometry x="-450" y="160" width="230" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="QNmaYOr-ZnPay1GvhER1-4" value="&amp;lt;fucai.me.makanplace.app.infra&amp;gt;" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;fontStyle=1" vertex="1" parent="1">
+          <mxGeometry x="-130" y="250" width="210" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="QNmaYOr-ZnPay1GvhER1-5" value="&amp;lt;fucai.me.makanplace.domain&amp;gt;" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;fontStyle=1" vertex="1" parent="1">
+          <mxGeometry x="-435" y="360" width="200" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="QNmaYOr-ZnPay1GvhER1-11" value="Domain Services" style="shape=folder;fontStyle=1;spacingTop=10;tabWidth=40;tabHeight=14;tabPosition=left;html=1;whiteSpace=wrap;verticalAlign=top;" vertex="1" parent="1">
+          <mxGeometry x="-780" y="400" width="530" height="180" as="geometry" />
+        </mxCell>
+        <mxCell id="QNmaYOr-ZnPay1GvhER1-16" value="Model" style="shape=folder;fontStyle=1;spacingTop=10;tabWidth=40;tabHeight=14;tabPosition=left;html=1;whiteSpace=wrap;verticalAlign=top;" vertex="1" parent="1">
+          <mxGeometry x="-780" y="600" width="900" height="440" as="geometry" />
+        </mxCell>
+        <mxCell id="QNmaYOr-ZnPay1GvhER1-17" value="&lt;p style=&quot;margin:0px;margin-top:4px;text-align:center;&quot;&gt;&lt;b&gt;&amp;lt;&amp;lt;Aggregate&amp;gt;&amp;gt;&lt;/b&gt;&lt;/p&gt;&lt;p style=&quot;margin:0px;margin-top:4px;text-align:center;&quot;&gt;&lt;b&gt;MakanSession&lt;/b&gt;&lt;/p&gt;&lt;hr size=&quot;1&quot;&gt;&lt;p style=&quot;margin:0px;margin-left:4px;&quot;&gt;- id : String&lt;/p&gt;&lt;p style=&quot;margin:0px;margin-left:4px;&quot;&gt;- displayName: String&lt;/p&gt;&lt;p style=&quot;margin:0px;margin-left:4px;&quot;&gt;- state: State&lt;/p&gt;&lt;p style=&quot;margin:0px;margin-left:4px;&quot;&gt;- gaterTime: DateTime&lt;/p&gt;&lt;hr size=&quot;1&quot;&gt;&lt;p style=&quot;margin:0px;margin-left:4px;&quot;&gt;enrol(makanKaki)&lt;/p&gt;&lt;p style=&quot;margin:0px;margin-left:4px;&quot;&gt;decide(policy)&lt;/p&gt;&lt;p style=&quot;margin:0px;margin-left:4px;&quot;&gt;suggestPlace(makanKaki, placeName)&lt;/p&gt;&lt;p style=&quot;margin:0px;margin-left:4px;&quot;&gt;abort()&lt;/p&gt;&lt;p style=&quot;margin:0px;margin-left:4px;&quot;&gt;&lt;br&gt;&lt;/p&gt;" style="verticalAlign=top;align=left;overflow=fill;fontSize=12;fontFamily=Helvetica;html=1;whiteSpace=wrap;" vertex="1" parent="1">
+          <mxGeometry x="-760" y="635" width="160" height="210" as="geometry" />
+        </mxCell>
+        <mxCell id="QNmaYOr-ZnPay1GvhER1-18" value="&lt;p style=&quot;margin:0px;margin-top:4px;text-align:center;&quot;&gt;&lt;b&gt;&amp;lt;&amp;lt;ValueObject&amp;gt;&amp;gt;&lt;/b&gt;&lt;/p&gt;&lt;p style=&quot;margin:0px;margin-top:4px;text-align:center;&quot;&gt;&lt;b&gt;MakanPlace&lt;/b&gt;&lt;/p&gt;&lt;hr size=&quot;1&quot;&gt;&lt;p style=&quot;margin:0px;margin-left:4px;&quot;&gt;&lt;span style=&quot;background-color: initial;&quot;&gt;- placeName: String&lt;/span&gt;&lt;br&gt;&lt;/p&gt;&lt;hr size=&quot;1&quot;&gt;&lt;p style=&quot;margin:0px;margin-left:4px;&quot;&gt;&lt;br&gt;&lt;/p&gt;" style="verticalAlign=top;align=left;overflow=fill;fontSize=12;fontFamily=Helvetica;html=1;whiteSpace=wrap;" vertex="1" parent="1">
+          <mxGeometry x="-500" y="685" width="160" height="110" as="geometry" />
+        </mxCell>
+        <mxCell id="QNmaYOr-ZnPay1GvhER1-20" value="&lt;p style=&quot;margin:0px;margin-top:4px;text-align:center;&quot;&gt;&lt;b&gt;&amp;lt;&amp;lt;ValueObject&amp;gt;&amp;gt;&lt;/b&gt;&lt;/p&gt;&lt;p style=&quot;margin:0px;margin-top:4px;text-align:center;&quot;&gt;&lt;b&gt;MakanKaki&lt;/b&gt;&lt;/p&gt;&lt;hr size=&quot;1&quot;&gt;&lt;p style=&quot;margin:0px;margin-left:4px;&quot;&gt;- id: String&lt;/p&gt;&lt;p style=&quot;margin:0px;margin-left:4px;&quot;&gt;- displayName: String&lt;/p&gt;" style="verticalAlign=top;align=left;overflow=fill;fontSize=12;fontFamily=Helvetica;html=1;whiteSpace=wrap;" vertex="1" parent="1">
+          <mxGeometry x="-760" y="900" width="160" height="110" as="geometry" />
+        </mxCell>
+        <mxCell id="QNmaYOr-ZnPay1GvhER1-21" value="" style="endArrow=diamondThin;endFill=1;endSize=24;html=1;rounded=0;entryX=0.25;entryY=1;entryDx=0;entryDy=0;exitX=0.25;exitY=0;exitDx=0;exitDy=0;" edge="1" parent="1" source="QNmaYOr-ZnPay1GvhER1-20" target="QNmaYOr-ZnPay1GvhER1-17">
+          <mxGeometry width="160" relative="1" as="geometry">
+            <mxPoint x="-620" y="1185" as="sourcePoint" />
+            <mxPoint x="-460" y="1185" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="QNmaYOr-ZnPay1GvhER1-22" value="owner" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" vertex="1" connectable="0" parent="QNmaYOr-ZnPay1GvhER1-21">
+          <mxGeometry x="0.0776" relative="1" as="geometry">
+            <mxPoint y="11" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="QNmaYOr-ZnPay1GvhER1-23" value="1" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" vertex="1" connectable="0" parent="QNmaYOr-ZnPay1GvhER1-21">
+          <mxGeometry x="-0.5812" y="2" relative="1" as="geometry">
+            <mxPoint x="-8" y="3" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="QNmaYOr-ZnPay1GvhER1-24" value="" style="endArrow=diamondThin;endFill=1;endSize=24;html=1;rounded=0;exitX=0.75;exitY=0;exitDx=0;exitDy=0;entryX=0.75;entryY=1;entryDx=0;entryDy=0;" edge="1" parent="1" source="QNmaYOr-ZnPay1GvhER1-20" target="QNmaYOr-ZnPay1GvhER1-17">
+          <mxGeometry width="160" relative="1" as="geometry">
+            <mxPoint x="-640" y="917.5" as="sourcePoint" />
+            <mxPoint x="-640" y="865" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="QNmaYOr-ZnPay1GvhER1-25" value="participant" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" vertex="1" connectable="0" parent="QNmaYOr-ZnPay1GvhER1-24">
+          <mxGeometry x="0.0776" relative="1" as="geometry">
+            <mxPoint y="11" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="QNmaYOr-ZnPay1GvhER1-26" value="*" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" vertex="1" connectable="0" parent="QNmaYOr-ZnPay1GvhER1-24">
+          <mxGeometry x="-0.5812" y="2" relative="1" as="geometry">
+            <mxPoint x="-8" y="3" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="QNmaYOr-ZnPay1GvhER1-27" value="" style="endArrow=diamondThin;endFill=1;endSize=24;html=1;rounded=0;entryX=1;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="QNmaYOr-ZnPay1GvhER1-18" target="QNmaYOr-ZnPay1GvhER1-17">
+          <mxGeometry width="160" relative="1" as="geometry">
+            <mxPoint x="-520" y="790" as="sourcePoint" />
+            <mxPoint x="100" y="915" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="QNmaYOr-ZnPay1GvhER1-28" value="*" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="1">
+          <mxGeometry x="-530" y="765" width="30" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="QNmaYOr-ZnPay1GvhER1-29" value="suggested by" style="endArrow=block;endFill=1;html=1;edgeStyle=orthogonalEdgeStyle;align=left;verticalAlign=top;rounded=0;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=1;entryY=0.25;entryDx=0;entryDy=0;" edge="1" parent="1" source="QNmaYOr-ZnPay1GvhER1-18" target="QNmaYOr-ZnPay1GvhER1-20">
+          <mxGeometry x="-0.5725" y="10" relative="1" as="geometry">
+            <mxPoint x="-450" y="935" as="sourcePoint" />
+            <mxPoint x="-290" y="935" as="targetPoint" />
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="QNmaYOr-ZnPay1GvhER1-30" value="1" style="edgeLabel;resizable=0;html=1;align=left;verticalAlign=bottom;" connectable="0" vertex="1" parent="QNmaYOr-ZnPay1GvhER1-29">
+          <mxGeometry x="-1" relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="QNmaYOr-ZnPay1GvhER1-31" value="&amp;nbsp;1..*" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" vertex="1" connectable="0" parent="QNmaYOr-ZnPay1GvhER1-29">
+          <mxGeometry x="0.8901" y="3" relative="1" as="geometry">
+            <mxPoint x="13" y="-20" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="QNmaYOr-ZnPay1GvhER1-32" value="" style="endArrow=diamondThin;endFill=1;endSize=24;html=1;rounded=0;entryX=1;entryY=1;entryDx=0;entryDy=0;exitX=0.25;exitY=1;exitDx=0;exitDy=0;" edge="1" parent="1" source="QNmaYOr-ZnPay1GvhER1-18" target="QNmaYOr-ZnPay1GvhER1-17">
+          <mxGeometry width="160" relative="1" as="geometry">
+            <mxPoint x="-458.08" y="825" as="sourcePoint" />
+            <mxPoint x="-600.0000000000001" y="867.02" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="QNmaYOr-ZnPay1GvhER1-33" value="0..1" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" vertex="1" connectable="0" parent="QNmaYOr-ZnPay1GvhER1-32">
+          <mxGeometry x="-0.5289" y="-1" relative="1" as="geometry">
+            <mxPoint x="11" y="11" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="QNmaYOr-ZnPay1GvhER1-34" value="Decided &lt;br&gt;Place" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" vertex="1" connectable="0" parent="QNmaYOr-ZnPay1GvhER1-32">
+          <mxGeometry x="0.2044" y="-3" relative="1" as="geometry">
+            <mxPoint x="14" y="-7" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="QNmaYOr-ZnPay1GvhER1-6" value="&lt;p style=&quot;margin:0px;margin-top:4px;text-align:center;&quot;&gt;&lt;b&gt;&amp;lt;&amp;lt;Interface&amp;gt;&amp;gt;&lt;/b&gt;&lt;/p&gt;&lt;p style=&quot;margin:0px;margin-top:4px;text-align:center;&quot;&gt;&lt;b&gt;DecisionPolicy&lt;/b&gt;&lt;/p&gt;&lt;hr size=&quot;1&quot;&gt;&lt;p style=&quot;margin:0px;margin-left:4px;&quot;&gt;&lt;/p&gt;&lt;p style=&quot;margin:0px;margin-left:4px;&quot;&gt;decide(MakanSession) : MakanSession&lt;/p&gt;" style="verticalAlign=top;align=left;overflow=fill;fontSize=12;fontFamily=Helvetica;html=1;whiteSpace=wrap;" vertex="1" parent="1">
+          <mxGeometry x="-190" y="685" width="230" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="QNmaYOr-ZnPay1GvhER1-7" value="&lt;p style=&quot;margin:0px;margin-top:4px;text-align:center;&quot;&gt;&lt;b style=&quot;background-color: initial;&quot;&gt;RandomSelectionDecisionPolicy&lt;/b&gt;&lt;br&gt;&lt;/p&gt;&lt;hr size=&quot;1&quot;&gt;&lt;p style=&quot;margin:0px;margin-left:4px;&quot;&gt;&lt;br&gt;&lt;/p&gt;" style="verticalAlign=top;align=left;overflow=fill;fontSize=12;fontFamily=Helvetica;html=1;whiteSpace=wrap;" vertex="1" parent="1">
+          <mxGeometry x="-185" y="845" width="225" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="QNmaYOr-ZnPay1GvhER1-9" value="" style="endArrow=block;dashed=1;endFill=0;endSize=12;html=1;rounded=0;entryX=0.5;entryY=1;entryDx=0;entryDy=0;" edge="1" parent="1" source="QNmaYOr-ZnPay1GvhER1-7" target="QNmaYOr-ZnPay1GvhER1-6">
+          <mxGeometry width="160" relative="1" as="geometry">
+            <mxPoint x="-310" y="945" as="sourcePoint" />
+            <mxPoint x="-150" y="945" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="QNmaYOr-ZnPay1GvhER1-35" value="&lt;p style=&quot;margin:0px;margin-top:4px;text-align:center;&quot;&gt;&lt;b&gt;&amp;lt;&amp;lt;Enumeration&amp;gt;&amp;gt;&lt;/b&gt;&lt;/p&gt;&lt;p style=&quot;margin:0px;margin-top:4px;text-align:center;&quot;&gt;&lt;b&gt;MakanSessionState&lt;/b&gt;&lt;/p&gt;&lt;hr size=&quot;1&quot;&gt;&lt;p style=&quot;margin:0px;margin-left:4px;&quot;&gt;&lt;/p&gt;&lt;p style=&quot;margin:0px;margin-left:4px;&quot;&gt;ACTIVE&lt;/p&gt;&lt;p style=&quot;margin:0px;margin-left:4px;&quot;&gt;ABANDONED&lt;/p&gt;&lt;p style=&quot;margin:0px;margin-left:4px;&quot;&gt;DECIDED&lt;/p&gt;" style="verticalAlign=top;align=left;overflow=fill;fontSize=12;fontFamily=Helvetica;html=1;whiteSpace=wrap;" vertex="1" parent="1">
+          <mxGeometry x="-152.5" y="900" width="160" height="120" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>

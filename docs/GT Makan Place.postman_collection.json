@@ -1,0 +1,148 @@
+{
+	"info": {
+		"_postman_id": "c69cf73f-24c6-477d-9795-d0068eeab7d0",
+		"name": "GT Makan Place",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "33168816"
+	},
+	"item": [
+		{
+			"name": "POST Create Makan Session",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"user_display_name\" : \"Session Owner\",\r\n    \"makan_session_display_name\" : \"Lunch for Team A\",\r\n    \"gather_time\" : \"2024-02-27T13:15:45Z\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/makan-session",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"makan-session"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "POST Make Suggestion",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"place_name\" : \"MOS Burger\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/makan-session/0f2417a5-667d-43c2-a31b-10208b86e031/suggest-place",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"makan-session",
+						"0f2417a5-667d-43c2-a31b-10208b86e031",
+						"suggest-place"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "POST Decide",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"user_display_name\" : \"foo\",\r\n    \"makan_session_display_name\" : \"session_name\",\r\n    \"gather_time\" : \"2024-02-27T13:15:45Z\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/makan-session/0f2417a5-667d-43c2-a31b-10208b86e031/decide",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"makan-session",
+						"0f2417a5-667d-43c2-a31b-10208b86e031",
+						"decide"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "POST Enroll",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"user_display_name\" : \"participant2\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/makan-session/0f2417a5-667d-43c2-a31b-10208b86e031/enroll",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"makan-session",
+						"0f2417a5-667d-43c2-a31b-10208b86e031",
+						"enroll"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "GET  Makan Session",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/makan-session/7e57e784-2818-4ddb-8dd3-934675e90354",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"makan-session",
+						"7e57e784-2818-4ddb-8dd3-934675e90354"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
